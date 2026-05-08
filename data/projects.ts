@@ -10,6 +10,16 @@ export interface Project {
 
 export const featuredProjects: Project[] = [
   {
+    repo: "nestjs-webhook-sender",
+    name: "nestjs-webhook-sender",
+    description:
+      "Published npm library — production-ready outbound webhook delivery with HMAC signing (Stripe/GitHub/Standard), BullMQ retry queue, exponential backoff, dead-letter queue, and delivery logs.",
+    tags: ["TypeScript", "NestJS", "BullMQ", "Redis", "npm", "Open Source"],
+    githubUrl: "https://github.com/SaifuddinTipu/nestjs-webhook-sender",
+    npmUrl: "https://www.npmjs.com/package/nestjs-webhook-sender",
+    featured: true,
+  },
+  {
     repo: "nestjs-socket-presence",
     name: "nestjs-socket-presence",
     description:
@@ -55,6 +65,9 @@ export const featuredProjects: Project[] = [
     githubUrl: "https://github.com/SaifuddinTipu/ecommerce-backend",
     featured: true,
   },
+];
+
+export const moreProjects: Project[] = [
   {
     repo: "url-shortener",
     name: "URL Shortener",
@@ -62,11 +75,8 @@ export const featuredProjects: Project[] = [
       "URL shortener with Redis caching, click analytics, JWT auth, rate limiting, and scheduled cleanup",
     tags: ["TypeScript", "NestJS", "PostgreSQL", "Redis", "JWT", "Swagger"],
     githubUrl: "https://github.com/SaifuddinTipu/url-shortener",
-    featured: true,
+    featured: false,
   },
-];
-
-export const moreProjects: Project[] = [
   {
     repo: "ai-policy-helper-starter-pack",
     name: "AI Policy Helper",

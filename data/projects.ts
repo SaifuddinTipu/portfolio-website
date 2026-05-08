@@ -4,10 +4,21 @@ export interface Project {
   description: string;
   tags: string[];
   githubUrl: string;
+  npmUrl?: string;
   featured: boolean;
 }
 
 export const featuredProjects: Project[] = [
+  {
+    repo: "nestjs-socket-presence",
+    name: "nestjs-socket-presence",
+    description:
+      "Published npm library — drop-in NestJS module for real-time user presence tracking via Socket.IO and Redis. Multi-socket, TTL expiry, room presence, bulk queries.",
+    tags: ["TypeScript", "NestJS", "Socket.IO", "Redis", "npm", "Open Source"],
+    githubUrl: "https://github.com/SaifuddinTipu/nestjs-socket-presence",
+    npmUrl: "https://www.npmjs.com/package/nestjs-socket-presence",
+    featured: true,
+  },
   {
     repo: "ai-saas-starter",
     name: "AI SaaS Starter Kit",
@@ -53,6 +64,9 @@ export const featuredProjects: Project[] = [
     githubUrl: "https://github.com/SaifuddinTipu/url-shortener",
     featured: true,
   },
+];
+
+export const moreProjects: Project[] = [
   {
     repo: "ai-policy-helper-starter-pack",
     name: "AI Policy Helper",
@@ -60,11 +74,8 @@ export const featuredProjects: Project[] = [
       "Local-first RAG app for answering company policy questions with source citations",
     tags: ["Python", "FastAPI", "Next.js", "Qdrant", "RAG"],
     githubUrl: "https://github.com/SaifuddinTipu/ai-policy-helper-starter-pack",
-    featured: true,
+    featured: false,
   },
-];
-
-export const moreProjects: Project[] = [
   {
     repo: "task-manager-api",
     name: "Task Manager API",

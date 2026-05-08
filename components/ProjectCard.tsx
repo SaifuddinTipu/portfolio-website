@@ -13,9 +13,22 @@ export default function ProjectCard({ project }: Props) {
       className="group block bg-[#111111] border border-[#1f1f1f] rounded-xl p-6 hover:border-[#7c3aed] transition-all duration-300 hover:-translate-y-1"
     >
       <div className="flex items-start justify-between mb-3">
-        <h3 className="text-[#f5f5f5] font-semibold text-lg group-hover:text-[#7c3aed] transition-colors">
-          {project.name}
-        </h3>
+        <div className="flex items-center gap-2 flex-wrap">
+          <h3 className="text-[#f5f5f5] font-semibold text-lg group-hover:text-[#7c3aed] transition-colors">
+            {project.name}
+          </h3>
+          {project.npmUrl && (
+            <a
+              href={project.npmUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={(e) => e.stopPropagation()}
+              className="text-xs px-2 py-0.5 rounded-md bg-red-500/10 text-red-400 border border-red-500/20 hover:bg-red-500/20 transition-colors font-mono"
+            >
+              npm
+            </a>
+          )}
+        </div>
         <svg
           className="w-4 h-4 text-[#71717a] group-hover:text-[#7c3aed] transition-colors flex-shrink-0 mt-1"
           fill="none"

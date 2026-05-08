@@ -6,7 +6,7 @@ import ProjectCard from "./ProjectCard";
 
 export default function MoreProjects() {
   return (
-    <section className="py-10 px-6 pb-20">
+    <section className="py-10 px-6 pb-20 bg-white">
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -15,7 +15,7 @@ export default function MoreProjects() {
           transition={{ duration: 0.5 }}
           className="text-center mb-12"
         >
-          <h2 className="text-2xl font-bold text-[#f5f5f5] mb-2">More Projects</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-2">More Projects</h2>
         </motion.div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {moreProjects.map((project, i) => (

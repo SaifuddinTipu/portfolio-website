@@ -5,7 +5,7 @@ import { experience } from "@/data/resume";
 
 export default function Experience() {
   return (
-    <section className="py-20 px-6">
+    <section className="py-20 px-6 bg-white">
       <div className="max-w-4xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -14,10 +14,10 @@ export default function Experience() {
           transition={{ duration: 0.5 }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl font-bold text-[#f5f5f5] mb-2">Experience</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-2">Experience</h2>
         </motion.div>
         <div className="relative">
-          <div className="absolute left-0 top-0 bottom-0 w-px bg-[#1f1f1f] ml-4 md:ml-0 md:left-1/2" />
+          <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-px bg-gray-200 -translate-x-1/2" />
           {experience.map((job, i) => (
             <motion.div
               key={job.company}
@@ -29,18 +29,18 @@ export default function Experience() {
                 i % 2 === 0 ? "md:pr-[calc(50%+2rem)]" : "md:pl-[calc(50%+2rem)]"
               }`}
             >
-              <div className="absolute left-2 md:left-1/2 top-1 w-4 h-4 rounded-full bg-[#7c3aed] border-2 border-[#0a0a0a] -translate-x-1/2" />
-              <div className="bg-[#111111] border border-[#1f1f1f] rounded-xl p-6 hover:border-[#7c3aed] transition-colors">
-                <p className="text-[#7c3aed] text-xs font-medium uppercase tracking-wider mb-1">
+              <div className="absolute left-4 md:left-1/2 top-1 w-3 h-3 rounded-full bg-[#7c3aed] border-2 border-white shadow-md -translate-x-1/2" />
+              <div className="bg-white border border-gray-200 rounded-xl p-6 hover:border-[#7c3aed] hover:shadow-lg hover:shadow-violet-100 transition-all">
+                <p className="text-[#7c3aed] text-xs font-semibold uppercase tracking-wider mb-1">
                   {job.period}
                 </p>
-                <h3 className="text-[#f5f5f5] font-bold text-lg">{job.title}</h3>
-                <p className="text-[#71717a] text-sm mb-4">
+                <h3 className="text-gray-900 font-bold text-lg">{job.title}</h3>
+                <p className="text-gray-500 text-sm mb-4">
                   {job.company} · {job.location}
                 </p>
                 <ul className="space-y-2">
                   {job.bullets.map((bullet, j) => (
-                    <li key={j} className="flex gap-2 text-[#71717a] text-sm leading-relaxed">
+                    <li key={j} className="flex gap-2 text-gray-600 text-sm leading-relaxed">
                       <span className="text-[#7c3aed] mt-1 flex-shrink-0">▸</span>
                       {bullet}
                     </li>

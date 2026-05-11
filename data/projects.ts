@@ -10,6 +10,16 @@ export interface Project {
 
 export const featuredProjects: Project[] = [
   {
+    repo: "express-correlation-context",
+    name: "express-correlation-context",
+    description:
+      "Published npm library — Express middleware for automatic correlation ID propagation via AsyncLocalStorage. Access request metadata anywhere in the call stack without passing req around. Zero dependencies.",
+    tags: ["TypeScript", "Express", "Node.js", "npm", "Open Source", "Middleware"],
+    githubUrl: "https://github.com/SaifuddinTipu/express-correlation-context",
+    npmUrl: "https://www.npmjs.com/package/express-correlation-context",
+    featured: true,
+  },
+  {
     repo: "nestjs-webhook-sender",
     name: "nestjs-webhook-sender",
     description:

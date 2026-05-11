@@ -12,26 +12,46 @@ export const personal = {
     "Results-driven Senior Software Developer with 6+ years of hands-on experience building and stabilizing enterprise-grade platforms under production pressure. Proven expertise resolving critical incidents—including 100% CPU crashes, memory leaks, and race conditions—across Node.js microservices serving 10,000+ concurrent users. Deep proficiency in MongoDB performance optimization, real-time WebSocket systems, and multi-platform API integrations. Combines strong technical ownership with business-focused delivery, consistently translating complex requirements into scalable, high-availability production systems.",
 };
 
-export const achievements = [
+export const strengths = [
   {
-    metric: "10,000+",
-    label: "Daily Active Users",
-    description: "Resolved 100% CPU / 8GB memory leak in production MongoDB, restoring CPU to <15%",
+    icon: "⚡",
+    title: "Backend Architecture",
+    summary: "NestJS · Redis · BullMQ · PostgreSQL · MongoDB",
+    bullets: [
+      "Event-driven microservices at scale",
+      "WebSocket & real-time systems",
+      "Production incident resolution",
+    ],
   },
   {
-    metric: "45%",
-    label: "Query Performance Gain",
-    description: "Zero-downtime migration of 2M+ chats, 500K+ customers, and 1M+ social messages",
+    icon: "📦",
+    title: "Open Source Author",
+    summary: "3 npm packages published",
+    bullets: [
+      "nestjs-webhook-sender",
+      "nestjs-socket-presence",
+      "express-correlation-context",
+    ],
   },
   {
-    metric: "75%",
-    label: "Faster Support Resolution",
-    description: "Angular + Node.js e-ticketing cut ticket resolution from 24 hours to 6 hours",
+    icon: "🧪",
+    title: "Test-First Engineering",
+    summary: "Jest · Supertest · nock",
+    bullets: [
+      "Unit, integration & E2E coverage",
+      "HTTP mocking with nock",
+      "BullMQ & Redis test patterns",
+    ],
   },
   {
-    metric: "2M+",
-    label: "Records Migrated",
-    description: "Architected data archiving pipeline with zero downtime and full data integrity",
+    icon: "🚀",
+    title: "Production Proven",
+    summary: "6+ years · 10,000+ DAU systems",
+    bullets: [
+      "Zero-downtime data migrations",
+      "Memory leak & CPU crisis fixes",
+      "Multi-tenant SaaS platforms",
+    ],
   },
 ];
 

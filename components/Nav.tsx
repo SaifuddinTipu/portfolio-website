@@ -26,8 +26,9 @@ export default function Nav() {
             Contact
           </Link>
           <a
-            href="/cv.pdf"
-            download
+            href="/portfolio-website/cv/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="px-4 py-2 bg-[#7c3aed] hover:bg-[#6d28d9] text-white text-sm rounded-lg transition-colors font-medium"
           >
             Download CV

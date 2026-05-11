@@ -26,11 +26,12 @@ export const strengths = [
   {
     icon: "📦",
     title: "Open Source Author",
-    summary: "3 npm packages published",
+    summary: "3 npm packages · OSS contributor",
     bullets: [
       "nestjs-webhook-sender",
       "nestjs-socket-presence",
       "express-correlation-context",
+      "Contributed fix to BullMQ (15k★)",
     ],
   },
   {

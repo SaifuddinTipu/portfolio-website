@@ -51,7 +51,7 @@ export default function Contact() {
             </a>
           </div>
           <p className="text-gray-400 text-sm mt-10">
-            © {new Date().getFullYear()} Saifuddin Tipu. Built with Next.js & Tailwind CSS.
+            © 2025 Saifuddin Tipu. Built with Next.js & Tailwind CSS.
           </p>
         </motion.div>
       </div>
